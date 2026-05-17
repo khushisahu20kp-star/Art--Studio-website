@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews — AURELIA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">AURELIA</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="process.html">Process</a></li>
+                <li><a href="reviews.html" class="active">Reviews</a></li>
+                <li><a href="behind.html">Behind</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">☰</button>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1>Client Reviews</h1>
+        <p>What our collectors say</p>
+    </header>
+
+    <section class="section">
+        <div class="container reviews-grid">
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"The plaster piece we ordered exceeded every expectation. The texture catches light beautifully throughout the day. It's truly a conversation starter."</p>
+                <div class="reviewer"><strong>Sarah Mitchell</strong><span>Interior Designer, NYC</span></div>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Working with Elena was a wonderful experience. She understood exactly what I wanted and delivered a stunning diptych for our living room."</p>
+                <div class="reviewer"><strong>James Carter</strong><span>Homeowner, Brooklyn</span></div>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"I've purchased three pieces from Aurelia now. The quality is consistently exceptional and the gold leaf work is simply breathtaking."</p>
+                <div class="reviewer"><strong>Amanda Liu</strong><span>Art Collector, San Francisco</span></div>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Our hotel lobby features a custom 50-inch Aurelia piece. Guests constantly ask where it's from. Worth every penny."</p>
+                <div class="reviewer"><strong>David Park</strong><span>Hotel Director, Miami</span></div>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"The mixed media piece brought so much warmth to our minimalist apartment. Elena's attention to detail is remarkable."</p>
+                <div class="reviewer"><strong>Rachel Torres</strong><span>Architect, Austin</span></div>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Fast communication, beautiful packaging, and a masterpiece of a painting. Aurelia is now my go-to for art gifts."</p>
+                <div class="reviewer"><strong>Michael Chen</strong><span>Business Owner, Chicago</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leave a Review -->
+    <section class="section">
+        <div class="container review-form-container">
+            <h2 class="section-title">Leave a Review</h2>
+            <form id="reviewForm" class="order-form">
+                <div class="form-group">
+                    <label for="rName">Your Name *</label>
+                    <input type="text" id="rName" required>
+                </div>
+                <div class="form-group">
+                    <label for="rReview">Your Review *</label>
+                    <textarea id="rReview" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary full-width">Submit Review</button>
+            </form>
+            <div id="reviewSuccess" class="success-message hidden">
+                ✓ Thank you for your review!
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col"><h4>AURELIA</h4><p>Handcrafted textured wall art studio.</p></div>
+            <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="gallery.html">Gallery</a></li><li><a href="store.html">Store</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+            <div class="footer-col"><h4>Follow Us</h4><ul><li><a href="#">Instagram</a></li><li><a href="#">Pinterest</a></li></ul></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 Aurelia Studio. All rights reserved.</p></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

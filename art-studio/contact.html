@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — AURELIA Textured Wall Art</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">AURELIA</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="process.html">Process</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="behind.html">Behind</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">☰</button>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1>Get In Touch</h1>
+        <p>We'd love to hear from you</p>
+    </header>
+
+    <section class="section contact-section">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <h2>Contact Details</h2>
+                <div class="contact-item">
+                    <h4>📍 Studio Address</h4>
+                    <p>47 Artisan Lane, Brooklyn, NY 11201</p>
+                </div>
+                <div class="contact-item">
+                    <h4>📧 Email</h4>
+                    <p>hello@aureliastudio.com</p>
+                </div>
+                <div class="contact-item">
+                    <h4>📞 Phone</h4>
+                    <p>+1 (212) 555-0198</p>
+                </div>
+                <div class="contact-item">
+                    <h4>🕐 Studio Hours</h4>
+                    <p>Mon – Fri: 10am – 6pm<br>Sat: 11am – 4pm<br>Sun: Closed</p>
+                </div>
+            </div>
+            <div class="contact-form-wrapper">
+                <form id="contactForm" class="order-form">
+                    <div class="form-group">
+                        <label for="cName">Your Name *</label>
+                        <input type="text" id="cName" required placeholder="Full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="cEmail">Email *</label>
+                        <input type="email" id="cEmail" required placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="cSubject">Subject</label>
+                        <input type="text" id="cSubject" placeholder="What is this regarding?">
+                    </div>
+                    <div class="form-group">
+                        <label for="cMessage">Message *</label>
+                        <textarea id="cMessage" rows="5" required placeholder="Your message..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary full-width">Send Message</button>
+                </form>
+                <div id="contactSuccess" class="success-message hidden">
+                    ✓ Message sent! We'll get back to you soon.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col"><h4>AURELIA</h4><p>Handcrafted textured wall art studio.</p></div>
+            <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="gallery.html">Gallery</a></li><li><a href="store.html">Store</a></li></ul></div>
+            <div class="footer-col"><h4>Follow Us</h4><ul><li><a href="#">Instagram</a></li><li><a href="#">Pinterest</a></li></ul></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 Aurelia Studio. All rights reserved.</p></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

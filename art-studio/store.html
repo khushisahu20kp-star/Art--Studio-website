@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store — AURELIA Custom Orders</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">AURELIA</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="store.html" class="active">Store</a></li>
+                <li><a href="process.html">Process</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="behind.html">Behind</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">☰</button>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1>Custom Commissions</h1>
+        <p>Order a bespoke textured piece tailored to your space</p>
+    </header>
+
+    <section class="section order-section">
+        <div class="container order-container">
+            <!-- Order Form -->
+            <div class="order-form-wrapper">
+                <form id="orderForm" class="order-form">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        <span class="error-msg" id="nameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        <span class="error-msg" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="type">Art Type *</label>
+                        <select id="type" name="type" required>
+                            <option value="">Select type</option>
+                            <option value="plaster">Textured Plaster</option>
+                            <option value="canvas">Canvas Painting</option>
+                            <option value="mixed">Mixed Media</option>
+                            <option value="gold">Gold Leaf Accent</option>
+                            <option value="diptych">Diptych Set</option>
+                            <option value="triptych">Triptych Set</option>
+                        </select>
+                        <span class="error-msg" id="typeError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="size">Size *</label>
+                        <select id="size" name="size" required>
+                            <option value="">Select size</option>
+                            <option value="small">Small (20x20") — $250</option>
+                            <option value="medium">Medium (30x30") — $450</option>
+                            <option value="large">Large (40x40") — $650</option>
+                            <option value="xlarge">Extra Large (50x50") — $900</option>
+                            <option value="custom">Custom Dimensions</option>
+                        </select>
+                        <span class="error-msg" id="sizeError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Special Requests</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Describe your vision, color preferences, placement space..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary full-width">Submit Order Request</button>
+                </form>
+                <div id="orderSuccess" class="success-message hidden">
+                    ✓ Thank you! Your order request has been received. We'll contact you within 24 hours.
+                </div>
+            </div>
+
+            <!-- Saved Orders -->
+            <div class="saved-orders">
+                <h3>Recent Order Requests</h3>
+                <div id="ordersList">
+                    <p class="empty-state">No orders yet.</p>
+                </div>
+                <button id="clearOrders" class="btn-secondary small hidden">Clear History</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col"><h4>AURELIA</h4><p>Handcrafted textured wall art studio.</p></div>
+            <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="gallery.html">Gallery</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+            <div class="footer-col"><h4>Follow Us</h4><ul><li><a href="#">Instagram</a></li><li><a href="#">Pinterest</a></li></ul></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 Aurelia Studio. All rights reserved.</p></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

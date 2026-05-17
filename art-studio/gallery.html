@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery — AURELIA Textured Wall Art</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">AURELIA</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="process.html">Process</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="behind.html">Behind</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">☰</button>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1>Our Gallery</h1>
+        <p>Browse curated collections of textured wall art</p>
+    </header>
+
+    <!-- Category Filter -->
+    <section class="section filter-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Works</button>
+                <button class="filter-btn" data-filter="plaster">Plaster Art</button>
+                <button class="filter-btn" data-filter="canvas">Canvas</button>
+                <button class="filter-btn" data-filter="mixed">Mixed Media</button>
+                <button class="filter-btn" data-filter="gold">Gold Leaf</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="section gallery-section">
+        <div class="container">
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Plaster -->
+                <div class="gallery-item" data-category="plaster">
+                    <img src="image/art-4.jpg" alt="Textured plaster artwork">
+                    <div class="overlay"><h3>Whispered Plaster</h3><span>Plaster on Canvas</span></div>
+                </div>
+                <div class="gallery-item" data-category="plaster">
+                    <img src="image/art-6.webp" alt="Plaster texture wall art">
+                    <div class="overlay"><h3>Calm Surface</h3><span>Plaster Medium</span></div>
+                </div>
+                <!-- Canvas -->
+                <div class="gallery-item" data-category="canvas">
+                    <img src="image/art-5.webp" alt="Minimal canvas art">
+                    <div class="overlay"><h3>Desert Canvas</h3><span>Layered Canvas</span></div>
+                </div>
+                <div class="gallery-item" data-category="canvas">
+                    <img src="image/art-3.jpg" alt="Canvas painting">
+                    <div class="overlay"><h3>Soft Layers</h3><span>Acrylic Canvas</span></div>
+                </div>
+                <!-- Mixed Media -->
+                <div class="gallery-item" data-category="mixed">
+                    <img src="image/art-10.jpg" alt="Mixed media art piece">
+                    <div class="overlay"><h3>Golden Fusion</h3><span>Mixed Media</span></div>
+                </div>
+                <div class="gallery-item" data-category="mixed">
+                    <img src="image/art-7.jpg" alt="Textured mixed media">
+                    <div class="overlay"><h3>Urban Texture</h3><span>Mixed Media</span></div>
+                </div>
+                <!-- Gold -->
+                <div class="gallery-item" data-category="gold">
+                    <img src="image/art-8.webp" alt="Gold leaf textured art">
+                    <div class="overlay"><h3>Golden Hour</h3><span>Gold Leaf on Plaster</span></div>
+                </div>
+                <div class="gallery-item" data-category="gold">
+                    <img src="image/art-9.jpg" alt="Gold accent wall art">
+                    <div class="overlay"><h3>Midas Touch</h3><span>Gold Leaf Canvas</span></div>
+                </div>
+                <div class="gallery-item" data-category="gold">
+                    <img src="image/art-1.webp" alt="Gold accent wall art">
+                    <div class="overlay"><h3>Golden Touch</h3><span>Gold Leaf Canvas</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col"><h4>AURELIA</h4><p>Handcrafted textured wall art studio.</p></div>
+            <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="gallery.html">Gallery</a></li><li><a href="store.html">Store</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+            <div class="footer-col"><h4>Follow Us</h4><ul><li><a href="#">Instagram</a></li><li><a href="#">Pinterest</a></li></ul></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 Aurelia Studio. All rights reserved.</p></div>
+    </footer>
+
+    <script src="
